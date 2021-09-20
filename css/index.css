@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.section-1 {
+  height: 100vh;
+  width: 100vw;
+  background: url("../assets/main7.jpg") no-repeat;
+  background-position: 0px;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  height: 100%;
+  background: rgba(230, 230, 230, 0.459);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 134, 134, 0.726);
+}
+
+/* nav bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .right ul {
+  display: flex;
+}
+
+.nav .right ul li {
+  list-style: none;
+}
+
+.nav .right ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+  margin-right: 35px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav .right ul li:last-child {
+  margin-right: 50px;
+}
+
+.nav .left img {
+  height: 150px;
+  width: 150px;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  margin-top: 90px;
+  color: rgb(245, 245, 245);
+  font-size: 50px;
+  width: 74%;
+  margin-left: 70px;
+}
+
+.hero span {
+  font-size: 20px;
+  margin-left: 50vh;
+  color: white;
+}
+
+.hero button {
+  width: 230px;
+  background: linear-gradient(90deg, #2895a6 -15.22%, #57d9df 126.25%);
+  border-radius: 36.5px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.hero .down {
+  height: 80px;
+  width: 50px;
+  margin-top: 60px;
+  animation: bounce 2s linear 2s infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(30%);
+  }
+}
+
+/* section-2 */
+.section-2,
+.section-3 {
+  height: 85vh;
+  width: 100vw;
+}
+
+.why-us-para,
+.testimonial-para {
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-us-para h1,
+.testimonial-para h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.why-us-para p,
+.testimonial-para p {
+  margin-top: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.three-reas {
+  margin: 40px auto 0 auto;
+  height: 60vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rOne,
+.rTwo,
+.rThree {
+  height: 90%;
+  width: 380px;
+  background: rgba(253, 253, 253, 0.87);
+  box-shadow: 7px 7px 4px rgba(207, 207, 207, 0.25),
+    -4px -1px 6px 5px rgba(139, 139, 139, 0.25);
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rOne img,
+.rTwo img,
+.rThree img {
+  height: 80px;
+  width: 80px;
+}
+
+.rOne .heading-why,
+.rTwo .heading-why,
+.rThree .heading-why {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.rOne .desc-why,
+.rTwo .desc-why,
+.rThree .desc-why {
+  width: 85%;
+  text-align: center;
+}
+
+/* section-3 */
+
+.testimonial-para {
+  margin-top: 10px;
+}
+
+.test-main {
+  max-width: 100%;
+  height: 60vh;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.test1 {
+  margin-left: 20px;
+  margin-right: 30px;
+  height: 82%;
+  min-width: 550px;
+  background: rgba(253, 253, 253, 0.87);
+  box-shadow: 7px 7px 4px rgba(207, 207, 207, 0.25),
+    -4px -1px 6px 5px rgba(139, 139, 139, 0.25);
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.test1 .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.person-image {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+}
+
+.test-logo {
+  height: 75px;
+  width: 75px;
+}
+
+.name {
+  margin-top: 20px;
+}
+
+.name p {
+  margin-top: 6px;
+  color: rgb(75, 75, 75);
+}
+
+.desc-test {
+  margin-top: 20px;
+  width: 90%;
+}
+
+/* section-4 */
+.section-4 {
+  height: 65vh;
+  width: 100%;
+  position: relative;
+}
+
+.hangout-heading {
+  font-size: 40px;
+  text-align: center;
+}
+
+.slider {
+  margin-top: 10vh;
+  height: 40vh;
+  width: 100%;
+}
+
+.slider img {
+  height: 200px;
+  margin-right: 30px;
+}
+
+footer {
+  height: 40vh;
+  background: #3f3d56;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .logo-div {
+  height: 75%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-bottom: 45px;
+}
+
+footer .logo-div .logo-white {
+  height: 130px;
+  width: 130px;
+}
+
+.activites-footer,
+.our-team-footer,
+.contact-us {
+  height: 75%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.activites-footer h2,
+.our-team-footer h2,
+.contact-us h2 {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.activites-footer p,
+.our-team-footer p,
+.contact-us p {
+  color: rgb(202, 202, 202);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger-open {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.slider img{
+  border-radius: 8px;
+}
+
+/* media query */
+@media only screen and (max-width: 490px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .three-reas {
+    gap: 40px;
+  }
+
+  .why-us-para p {
+    width: 80%;
+  }
+
+  .hamburger {
+    display: block;
+    height: 6vh;
+    width: 10vw;
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger-open {
+    visibility: hidden;
+    pointer-events: none;
+    height: 50vh;
+    width: 50vh;
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    z-index: 4;
+    /* background: red; */
+  }
+  .open {
+    display: block;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  .cross img {
+    height: 55px;
+    width: 55px;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 40px;
+  }
+  .hamburger-links ul {
+    list-style: none;
+    margin: 90px 60px;
+  }
+
+  .hamburger-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .stick-1,
+  .stick-2,
+  .stick-3 {
+    height: 4px;
+    width: 90%;
+    background: white;
+  }
+
+  .hero {
+    margin-top: -10px;
+    height: 60vh;
+    width: 90%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin-top: 10px;
+    font-size: 33px;
+    width: 100%;
+    transform: translateX(-9%);
+  }
+
+  .hero span {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .down {
+    margin-top: 10px;
+  }
+
+  .three-reas {
+    height: 185vh;
+  }
+
+  .three-reas .rOne,
+  .rTwo,
+  .rThree {
+    height: 400px;
+  }
+
+  .rOne img,
+  .rTwo img,
+  .rThree img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .rOne .heading-why,
+  .rTwo .heading-why,
+  .rThree .heading-why {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+  }
+
+  .rOne .desc-why,
+  .rTwo .desc-why,
+  .rThree .desc-why {
+    width: 85%;
+    text-align: center;
+  }
+  .rThree {
+    margin-bottom: 40px;
+  }
+  .section-3 {
+    margin-top: 180vh;
+  }
+
+  .testimonial-para {
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    top: -275px;
+  }
+  .test-main {
+    position: relative;
+    top: 10%;
+    width: 95%;
+    margin: 0 auto;
+    height: 65vh;
+    top: -35%;
+  }
+
+  .test-main .test1 {
+    height: 450px !important;
+    min-width: 350px;
+  }
+
+  .test-main .test1 .test-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .slider {
+    width: 95%;
+    margin: 50px auto 0 auto;
+  }
+
+  .slider img {
+    height: 150px;
+    width: 200px !important;
+    margin-right: 3px;
+  }
+
+  footer {
+    margin-top: 40px;
+    height: 65vh;
+    flex-wrap: wrap;
+  }
+
+  footer .activites-footer h2,
+  .our-team-footer h2,
+  .contact-us h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .three-reas {
+    margin: 30px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .rOne,
+  .rTwo,
+  .rThree {
+    height: 75%;
+    width: 330px;
+  }
+
+  .rThree {
+    margin: 30px auto;
+  }
+
+  .section-3 {
+    margin-top: 360px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .rThree {
+    margin: 0px;
+  }
+  .three-reas {
+    gap: 10px;
+  }
+
+  .section-3 {
+    margin-top: 60px;
+  }
+}
