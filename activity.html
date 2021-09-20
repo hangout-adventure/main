@@ -138,6 +138,37 @@
         
       </section>
 
+
+      <section class="section-5">
+        <div class="hero-sec2">
+            <h1>Summer Camps</h1>
+            <div class="blue-line"></div>
+            <p class="desc-sec2">Learn, Engage, Accelerate, Assimilate.</p>
+        </div>
+        <div class="splide splide3">
+
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <img src="./assets/left.svg" alt="">
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <img src="./assets/right.svg" alt="">
+                </button>
+            </div>
+    
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide"><a href=""><img src="./assets/junga.png" alt=""></a> <p>Camp Junga, Shimla</p></div>
+              <div class="splide__slide"><a href=""><img src="./assets/manali-camp.jpg" alt=""></a> <p>Camp Manali, Manali</p></div>
+              <div class="splide__slide"><a href=""><img src="./assets/tirthan.jpg" alt=""></a> <p>Camp Tirthan, Tirthan valley</p></div>
+              <div class="splide__slide"><a href=""><img src="./assets/tamia.jpg" alt=""></a> <p>Camp Tamia, Madhya Pradesh</p></div>
+              <div class="splide__slide"><a href=""><img src="./assets/sitl.jpg" alt=""></a> <p>Camp Sitlakhet, Uttrakhand</p></div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
       <footer>
         <div class="logo-div">
           <img src="./assets/logo-white.png" alt="" class="logo-white" />
@@ -213,7 +244,20 @@ new Splide(".splide0", {
         },
       }).mount();
 
-    
+      new Splide(".splide3", {
+        perPage: 3,
+        rewind: true,
+        breakpoints: {
+          640: {
+            perPage: 2,
+            gap: "1rem",
+          },
+          480: {
+            perPage: 1,
+            gap: "1rem",
+          },
+        },
+      }).mount();
     </script>
 
     
