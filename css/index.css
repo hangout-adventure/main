@@ -471,7 +471,7 @@ a {
     margin-bottom: 40px;
   }
   .section-3 {
-    margin-top: 160vh;
+    margin-top: 180vh;
     height: 70vh;
   }
 
@@ -549,7 +549,38 @@ footer .logo-div .logo-white{
   height: 40vh;
 }
 }
+/* .section-3 {
+  margin-top: 180vh;
+  height: 70vh;
+} */
 
+@media only screen and (max-width: 400px){
+  html,body{
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+.section-3 {
+  margin-top: 220vh;
+  height: 70vh;
+}
+.test-main {
+  position: relative;
+  top: 10%;
+  width: 95%;
+  margin: 0 auto;
+  height: 73vh;
+  top: -35%;
+  margin-bottom: 60px;
+  overflow-y: hidden;
+}
+.section-4{
+  margin-top: 10vh;
+}
+footer{
+  margin-top: 30vh;
+height: 50vH;
+}
+}
 @media only screen and (min-width: 768px) {
   html,
   body {
