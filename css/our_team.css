@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@media only screen and (min-width: 1110px) {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -87,7 +87,7 @@ a {
   width: 90%;
   font-size: 14px;
 }
-
+}
 @media only screen and (max-width: 490px) {
   body,
   html {
@@ -133,5 +133,97 @@ a {
     margin-left: 50px;
     width: 90%;
     height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden !important;
+    height: 200vh;
+  }
+  
+  .main-head {
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .main-head h1 {
+    font-size: 33px;
+    color: #333333;
+  }
+  
+  .main-head p {
+    margin-top: 10px;
+    color: #535353;
+    font-size: 17px;
+    width: 40%;
+    transform: translateX(75%);
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cards {
+    height: 70vh;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: rgba(253, 253, 253, 0.87);
+    box-shadow: 7px 7px 4px rgba(207, 207, 207, 0.25),
+      -4px -1px 6px 5px rgba(139, 139, 139, 0.25);
+    border-radius: 26px;
+    height: auto;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .card:first-child {
+    margin-left: 0px;
+  }
+  
+  .card:last-child {
+    margin-bottom: 60px;
+  }
+
+  .card .image {
+    margin-top: 5px;
+  }
+  
+  .person-image {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+  }
+  
+  .test-logo {
+    height: 75px;
+    width: 75px;
+  }
+  
+  .name {
+    margin-top: 20px;
+  }
+  
+  .name p {
+    margin-top: 6px;
+    color: rgb(75, 75, 75);
+  }
+  
+  .desc-test {
+    margin-top: 20px;
+    width: 90%;
+    font-size: 14px;
   }
 }
