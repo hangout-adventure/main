@@ -27,7 +27,7 @@ body {
   transform: translateX(75%);
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
@@ -54,7 +54,7 @@ a{
   padding: 15px;
 }
 
-.card:first-child{
+.card:first-child {
   margin-left: 60px;
 }
 
@@ -89,17 +89,22 @@ a{
 }
 
 @media only screen and (max-width: 490px) {
-  body {
+  body,
+  html {
     overflow-y: scroll;
     overflow-x: hidden !important;
+    width: 100vw;
   }
 
-  .main-head{
-    width: 90%;
-    margin: 0 auto;
+  .main-head {
+    position: relative;
+    left: 50%;
+    transform: translateX(-42%);
+    /* width: 90%; */
+    /* margin: 0 auto; */
   }
 
-  .main-head h1{
+  .main-head h1 {
     font-size: 25px;
     text-align: center;
     margin-top: 25px;
@@ -112,18 +117,21 @@ a{
     transform: translateX(-13px);
   }
 
-  .cards{
+  .cards {
     width: 90%;
     margin: 30px 0px;
     flex-wrap: wrap;
     justify-content: start;
-    margin-right: 25px;
+    /* margin-right: 25px; */
+    /* background-color: red; */
+    height: auto;
   }
-
-  .card{
-    margin-left: 6.5px;
+  .card:first-child {
+    margin-left: 55px;
+  }
+  .card {
+    margin-left: 50px;
     width: 90%;
     height: auto;
   }
-
 }
