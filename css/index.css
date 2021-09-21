@@ -332,7 +332,7 @@ a {
   color: white;
 }
 
-.slider img{
+.slider img {
   border-radius: 8px;
 }
 
@@ -507,7 +507,7 @@ a {
 
   .slider img {
     height: 150px;
-   
+
     margin-right: 3px;
   }
 
@@ -519,10 +519,12 @@ a {
     flex-wrap: wrap;
     gap: 2px;
   }
-footer .activites-footer, footer .our-team-footer, footer .contact-us{
-  height: auto;
-  margin-top: 30px;
-}
+  footer .activites-footer,
+  footer .our-team-footer,
+  footer .contact-us {
+    height: auto;
+    margin-top: 30px;
+  }
   footer .activites-footer h2,
   .our-team-footer h2,
   .contact-us h2 {
@@ -530,52 +532,52 @@ footer .activites-footer, footer .our-team-footer, footer .contact-us{
     width: 120%;
   }
 
-footer .logo-div .logo-white{
-
-  width: 80px;
-  height: 80px;
-}
-
-.slider{
-  height: 10vh;
-  position: relative;
-}
-.slick-dots{
-  position: absolute;
-  top: 190px;
-}
-
-.section-4{
-  height: 40vh;
-}
-}
-
-@media only screen and (max-width: 400px){
-  html,body{
-      overflow-y: scroll;
-      overflow-x: hidden;
+  footer .logo-div .logo-white {
+    width: 80px;
+    height: 80px;
   }
-.section-3 {
-  margin-top: 220vh;
-  height: 70vh;
+
+  .slider {
+    height: 10vh;
+    position: relative;
+  }
+  .slick-dots {
+    position: absolute;
+    top: 190px;
+  }
+
+  .section-4 {
+    height: 40vh;
+  }
 }
-.test-main {
-  position: relative;
-  top: 10%;
-  width: 95%;
-  margin: 0 auto;
-  height: 73vh;
-  top: -35%;
-  margin-bottom: 60px;
-  overflow-y: hidden;
-}
-.section-4{
-  margin-top: 10vh;
-}
-footer{
-  margin-top: 30vh;
-height: 50vH;
-}
+
+@media only screen and (max-width: 390px) {
+  html,
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .section-3 {
+    margin-top: 220vh;
+    height: 70vh;
+  }
+  .test-main {
+    position: relative;
+    top: 10%;
+    width: 95%;
+    margin: 0 auto;
+    height: 73vh;
+    top: -35%;
+    margin-bottom: 60px;
+    overflow-y: hidden;
+  }
+  .section-4 {
+    margin-top: 10vh;
+  }
+  footer {
+    margin-top: 30vh;
+    height: 50vh;
+  }
 }
 @media only screen and (min-width: 768px) {
   html,
