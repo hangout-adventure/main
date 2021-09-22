@@ -269,12 +269,16 @@ footer .logo-div .logo-white {
   }
 
   .link{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 100%;
     margin: 0 auto;
   }
 
 
   footer {
-    margin-top: 40px;
+    margin-top: 20vh;
     height: 37vh;
     justify-content: space-evenly;
     align-items: flex-start;
