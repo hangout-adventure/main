@@ -272,4 +272,31 @@ footer .logo-div .logo-white {
     margin: 0 auto;
   }
 
+
+  footer {
+    margin-top: 40px;
+    height: 37vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  footer .activites-footer,
+  footer .our-team-footer,
+  footer .contact-us {
+    height: auto;
+    margin-top: 30px;
+  }
+  footer .activites-footer h2,
+  .our-team-footer h2,
+  .contact-us h2 {
+    font-size: 18px;
+    width: 120%;
+  }
+
+  footer .logo-div .logo-white {
+    width: 80px;
+    height: 80px;
+  }
+
 }
