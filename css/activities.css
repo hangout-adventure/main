@@ -285,12 +285,14 @@ footer .logo-div .logo-white {
     flex-wrap: wrap;
     gap: 2px;
   }
+
   footer .activites-footer,
   footer .our-team-footer,
   footer .contact-us {
     height: auto;
     margin-top: 30px;
   }
+  
   footer .activites-footer h2,
   .our-team-footer h2,
   .contact-us h2 {
